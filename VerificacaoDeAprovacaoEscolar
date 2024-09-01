@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class test5 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        double mediaNota = 10;
+
+        System.out.println("Insira média final: ");
+        mediaNota = sc.nextDouble();
+
+        if (mediaNota >= 7) {
+            System.out.println("Aprovado");
+        } else if (mediaNota >=5 && mediaNota < 7) {
+            System.out.println("Recuperação");
+        } else if (mediaNota < 5) {
+            System.out.println("Reprovado");
+        }
+
+    }
+
+}

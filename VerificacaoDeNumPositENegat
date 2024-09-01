@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class test8 {
+
+    public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+            // Leitura do número
+            System.out.println("Digite um número:");
+            double numero = sc.nextDouble();
+
+            // Verificação do número
+            verificarNumero(numero);
+
+            // Fechar o scanner
+            sc.close();
+        }
+
+        // Método para verificar o sinal de um número
+        public static void verificarNumero(double num) {
+            if (num > 0) {
+                System.out.println("O número é positivo.");
+            } else if (num < 0) {
+                System.out.println("O número é negativo.");
+            } else {
+                System.out.println("O número é zero.");
+            }
+        }
+
+}

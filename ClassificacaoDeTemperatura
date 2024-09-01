@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class test7 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Insira temperatura em graus Celsius: ");
+        double celsius = sc.nextDouble();
+
+        if (celsius > 30) {
+            System.out.println("Quente");
+        } else if (celsius > 15 && celsius <= 30) {
+            System.out.println("Agradável");
+        } else if (celsius < 15) {
+            System.out.println("Frio");
+        }
+        
+    }
+
+}

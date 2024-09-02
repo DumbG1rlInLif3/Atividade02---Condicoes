@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class test9 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Insira valor total da compra: ");
+        double valorCompra = sc.nextDouble();
+
+        //Variáveis de desconto
+        double percentualDesconto = 0;
+        double valorDesconto = 0;
+        double valorFinal = valorCompra;
+
+        //aplicação de desconto progressivo no valor da compra
+        if (valorCompra > 500) {
+            percentualDesconto = 20;
+        } else if (valorCompra > 200 && valorCompra <= 500) {
+            percentualDesconto = 10;
+        } else if (valorCompra > 100 && valorCompra <= 199.99) {
+            percentualDesconto = 5;
+        } else if (valorCompra <100) {
+            percentualDesconto = 0;
+        }
+
+        sc.close();
+
+        //Calcular valor do desconto e valor final
+
+        valorDesconto = (percentualDesconto / 100) * valorCompra;
+        valorFinal = valorCompra - valorDesconto;
+
+        System.out.println("Valor da compra: " + valorCompra);
+        System.out.println("Valor percentual do desconto: " + percentualDesconto);
+        System.out.println("Valor do desconto: " + valorDesconto);
+        System.out.println("Valor final: " + valorFinal);
+
+    }
+
+}

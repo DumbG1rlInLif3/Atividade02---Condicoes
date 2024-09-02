@@ -10,6 +10,7 @@ public class test2 {
         System.out.println(" Digite número : ");
         numero = sc.nextInt();
 
+        //% -> dividido por 0
         if (numero % 2 == 0) {
             System.out.println(" É par.");
         } else {

@@ -11,6 +11,7 @@ public class test4 {
         System.out.println("Digite um dia da semana: ");
         diaDaSemana = sc.nextInt();
 
+    //switch -> verificação
         switch (diaDaSemana) {
             case 1:
                 System.out.println("Domingo");
